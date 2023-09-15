@@ -187,7 +187,6 @@ ul.links li a:active {
   padding: 10px;
   border-radius: 10px;
   box-shadow: 0px 0px 20px -5px grey;
-  margin-left: 10px; /* Atur jarak horizontal antara .delivery dan .nonCod sesuai kebutuhan Anda */
 }
 
 .depo {
@@ -251,6 +250,17 @@ ul.links li a:active {
 }
 
 .keterangan {
+  display: flex;
+  flex-direction: column;
+}
+
+.keterangan1 {
+  display: flex;
+  flex-direction: center;
+  padding: 15px;
+}
+
+.keterangan2 {
   display: flex;
   justify-content: center;
 }
