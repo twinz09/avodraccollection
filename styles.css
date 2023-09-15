@@ -66,7 +66,6 @@ img {
 
 h1 {
   font-size: 25px;
-  font-family: cursive;
   color: #333;
 }
 
@@ -89,7 +88,6 @@ ul.links li a {
   text-decoration: none;
   outline: none;
   color: #000000;
-  font-family: cursive;
   background-color: #ffffff;
   border: 2px solid #777575;
   border-radius: 30px;
@@ -175,7 +173,6 @@ ul.links li a:active {
   height: 70px;
   padding: 10px;
   border-radius: 10px;
-  font-family: cursive;
   box-shadow: 0px 0px 20px -5px grey;
 }
 
@@ -189,7 +186,6 @@ ul.links li a:active {
   height: 70px;
   padding: 10px;
   border-radius: 10px;
-  font-family: cursive;
   box-shadow: 0px 0px 20px -5px grey;
   margin-left: 10px; /* Atur jarak horizontal antara .delivery dan .nonCod sesuai kebutuhan Anda */
 }
@@ -219,7 +215,6 @@ ul.links li a:active {
   display: flex;
   text-align: left;
   padding: 0px;
-  font-family: cursive;
   border-radius: 10px 10px 0px 0px;
   background-color: #ffb7b7;
   border: 2px solid #777575;
@@ -234,7 +229,6 @@ ul.links li a:active {
   display: flex;
   text-align: left;
   padding: 0px;
-  font-family: cursive;
   border-radius: 10px 10px 0px 0px;
   background-color: #ffb7b7;
   border: 2px solid #777575;
