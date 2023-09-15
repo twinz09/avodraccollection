@@ -1,0 +1,298 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.text {
+  display: flex; /* Membuat elemen div menjadi kontainer flex */
+  flex-direction: column; /* Mengatur tata letak vertikal */
+  align-items: center; /* Mengatur konten horizontal ke tengah */
+  text-align: center; /* Mengatur teks menjadi rata tengah */
+}
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 140px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px;
+  position: absolute;
+  z-index: 1;
+  bottom: 150%;
+  left: 50%;
+  margin-left: -75px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.tooltip .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f8f0e5;
+  background-image: linear-gradient(#f8f0e5, #eadbc8);
+}
+
+header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+img {
+  width: 100px;
+}
+
+h1 {
+  font-size: 25px;
+  font-family: cursive;
+  color: #333;
+}
+
+ul.links {
+  list-style: none;
+  padding: 0;
+  text-align: center;
+}
+
+ul.links li {
+  margin-bottom: 20px;
+}
+
+ul.links li a {
+  display: inline-block;
+  padding: 15px 40px; /* Tetapkan padding horizontal yang sama untuk semua tombol */
+  font-size: 15px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #000000;
+  font-family: cursive;
+  background-color: #ffffff;
+  border: 2px solid #777575;
+  border-radius: 30px;
+  box-shadow: 0 9px #777575;
+  transition: background-color 0.3s, box-shadow 0.3s, tran sform 0.3s;
+  width: 400px;
+  max-width: 500px; /* Tetapkan lebar maksimum untuk semua tombol */
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+ul.links li a:hover {
+  background-color: #aed2ffd8;
+  box-shadow: 0 9px #777575;
+}
+
+/* Tambahkan efek pressed saat tombol ditekan */
+ul.links li a:active {
+  background-color: #aed2ffd8;
+  box-shadow: 0 5px #777575;
+  transform: translateY(4px);
+}
+
+.copy-button {
+  background-color: #dac0a3;
+  border: none;
+  color: rgb(0, 0, 0);
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 15px;
+  margin: 1px 1px;
+  cursor: pointer;
+  border-radius: 10px;
+  width: 90px;
+  height: 40px;
+  border: 2px solid #777575;
+}
+
+.copy-button:active {
+  background-color: #1abfac;
+  border: 2px solid #777575;
+}
+
+.noRek {
+  font-size: 18px;
+  padding: 3px;
+}
+
+.a-n {
+  font-size: 11px;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.payBox {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #f8f0e5;
+  width: 200px;
+  height: 130px;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 20px -7px grey;
+}
+
+.delivery {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f8f0e5;
+  width: 120px;
+  height: 70px;
+  padding: 10px;
+  border-radius: 10px;
+  font-family: cursive;
+  box-shadow: 0px 0px 20px -5px grey;
+}
+
+.nonCod {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f8f0e5;
+  width: 120px;
+  height: 70px;
+  padding: 10px;
+  border-radius: 10px;
+  font-family: cursive;
+  box-shadow: 0px 0px 20px -5px grey;
+  margin-left: 10px; /* Atur jarak horizontal antara .delivery dan .nonCod sesuai kebutuhan Anda */
+}
+
+.depo {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+  background-color: #f8f0e5;
+  width: 400px;
+  height: 470px;
+  border-radius: 0px 0px 10px 10px;
+  border: 2px solid #777575;
+  display: flex;
+  padding: 20px; /* Padding di dalam container */
+}
+
+.stepOne {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 400px;
+  height: 50px;
+  display: flex;
+  text-align: left;
+  padding: 0px;
+  font-family: cursive;
+  border-radius: 10px 10px 0px 0px;
+  background-color: #ffb7b7;
+  border: 2px solid #777575;
+}
+
+.stepTwo {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 400px;
+  height: 70px;
+  display: flex;
+  text-align: left;
+  padding: 0px;
+  font-family: cursive;
+  border-radius: 10px 10px 0px 0px;
+  background-color: #ffb7b7;
+  border: 2px solid #777575;
+}
+
+.example {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+  background-color: #f8f0e5;
+  width: 400px;
+  height: 280px;
+  border-radius: 0px 0px 10px 10px;
+  border: 2px solid #777575;
+  display: flex;
+  padding: 20px; /* Padding di dalam container */
+}
+
+.keterangan {
+  display: flex;
+  justify-content: center;
+}
+
+.delivery,
+.nonCod {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 10px; /* Atur jarak horizontal antara .delivery dan .nonCod sesuai kebutuhan Anda */
+}
+
+.profile {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.ourLink {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 500px;
+  height: 470px;
+  display: flex;
+  padding: 20px; /* Padding di dalam container */
+}
+
+footer {
+  text-align: center;
+  margin-top: 20px;
+}
+
+footer p {
+  font-size: 14px;
+  color: #666;
+}
