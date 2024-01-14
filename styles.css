@@ -6,6 +6,33 @@
   border: none;
 }
 
+/* Tambahan tampilan responsive */
+
+/* Add media query for smaller screens */
+@media (max-width: 600px) {
+  .button-container {
+    margin-top: 20px;
+  }
+
+  .button-link {
+    width: 80%; /* Set the width to occupy 80% of the screen width */
+  }
+
+  .arrow-container {
+    top: -20px; /* Adjust the position of the arrows for smaller screens */
+  }
+
+  .arrow {
+    width: 8px;
+    height: 8px;
+    border-left: 4px solid transparent;
+    border-right: 4px solid transparent;
+    border-bottom: 8px solid #007bff; /* Change arrow orientation for smaller screens */
+  }
+}
+
+/* The rest of your existing CSS styles */
+
 .text {
   display: flex; /* Membuat elemen div menjadi kontainer flex */
   flex-direction: column; /* Mengatur tata letak vertikal */

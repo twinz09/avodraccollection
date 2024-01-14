@@ -28,7 +28,7 @@ copyButtons.forEach((button, index) => {
     document.body.removeChild(tempTextarea);
 
     // Mengubah teks pada tombol menjadi "Copied"
-    button.innerText = "Copied";
+    button.innerText = "Tersalin";
 
     // Menonaktifkan tombol setelah dicopy
     button.disabled = true;
@@ -36,7 +36,7 @@ copyButtons.forEach((button, index) => {
     // Mengatur ulang teks tombol lainnya menjadi "Copy" dan mengaktifkannya
     copyButtons.forEach((otherButton, otherIndex) => {
       if (otherIndex !== index) {
-        otherButton.innerText = "Copy";
+        otherButton.innerText = "Salin";
         otherButton.disabled = false;
       }
     });
