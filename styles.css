@@ -7,8 +7,12 @@
 }
 
 body {
+  background-image: url("asset/back-ground.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
   font-family: Arial, sans-serif;
-  background-color: #edf9ff;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -24,9 +28,8 @@ body {
   max-width: 600px;
   margin: 0 auto;
   padding: 20px;
-  background-color: #f8f0e5;
+  background-color: #f8f0e500;
   border-radius: 10px;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
 }
 
 .profile {
@@ -202,12 +205,32 @@ img {
   margin-bottom: 10px;
 }
 
+.social_media-image {
+  width: 25px; /* Anda dapat mengatur ukuran sesuai kebutuhan */
+  height: auto;
+}
+
+/* .tiktok-link {
+  display: inline-block;
+  transition: transform 0.3s, box-shadow 0.3s;
+} */
+
+/* .tiktok-link:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.tiktok-link:active {
+  transform: scale(0.95);
+} */
+
 /* Media Queries untuk Responsif */
 
 @media (max-width: 768px) {
   ul.links li a {
     font-size: 16px;
     padding: 12px 20px;
+    background-image: url("asset/b"); /* Ganti dengan path yang sesuai */
   }
 }
 
