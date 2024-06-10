@@ -215,6 +215,7 @@ img {
 @media (max-width: 768px) {
   body {
     background-image: url("asset/background-mobile.jpg");
+    background-attachment: scroll;
   }
 
   ul.links li a {
